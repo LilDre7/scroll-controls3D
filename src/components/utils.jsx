@@ -1,6 +1,9 @@
 import * as THREE from "three";
 
 export const GenerateInitMaterials = () => {
+  const falloutBoyTexture = new THREE.TextureLoader().load("/FalloutBoy.png");
+  falloutBoyTexture.flipY = false;
+
   const cristalMaterial = new THREE.MeshPhysicalMaterial({
     color: 0x8c8c8c,
     metalness: 0.0,
@@ -19,5 +22,5 @@ export const GenerateInitMaterials = () => {
     transparent: false,
   });
 
-  return [cristalMaterial, sodaMaterial];
+  return { cristalMaterial, sodaMaterial };
 };

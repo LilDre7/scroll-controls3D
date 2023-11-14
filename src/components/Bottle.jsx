@@ -1,19 +1,22 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { GenerateInitMaterials } from "./utils";
 
 export function Bottle(props) {
+  const { cristalMaterial, sodaMaterial } = GenerateInitMaterials();
   const { nodes, materials } = useGLTF("/images/Bottle.glb");
+
   return (
     <group {...props} dispose={null}>
       <mesh
         name="Bottle"
         geometry={nodes.Bottle.geometry}
-        material={nodes.Bottle.material}
+        material={cristalMaterial}
       />
       <mesh
         name="Soda"
         geometry={nodes.Soda.geometry}
-        material={nodes.Soda.material}
+        material={sodaMaterial}
       />
       <mesh
         name="Brand"
