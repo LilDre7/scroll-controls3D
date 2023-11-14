@@ -1,8 +1,12 @@
-import gsap, { Power2 } from "gsap";
+import gsap, { Power4 } from "gsap";
 import React, { useLayoutEffect, useRef } from "react";
-import { useGLTF } from "@react-three/drei";
-import { GenerateInitMaterials } from "./utils";
-import { useThree } from "@react-three/fiber";
+import { useGLTF, useScroll } from "@react-three/drei";
+import {
+  GenerateInitMaterials,
+  GenerateAnimatins,
+  LoadTextures,
+} from "./utils";
+import { useFrame, useThree } from "@react-three/fiber";
 
 export function Bottle(props) {
   const { cristalMaterial, sodaMaterial, brandMaterial } =
@@ -11,33 +15,43 @@ export function Bottle(props) {
 
   const scene = useThree((state) => state.scene);
   const timeline = gsap.timeline({
-    defaults: { duration: 1, ease: Power2.easeOut },
+    defaults: { duration: 2, ease: Power4.easeOut },
   });
+  const scroll = useScroll();
+
+  const colorsMaterial = {
+    cristal: "#8c8c8c",
+    soda: "#000",
+  };
 
   useLayoutEffect(() => {
-    const bottleGroup = scene.getObjectByName("BottleGroup");
+    const textures = LoadTextures([
+      "FalloutBoy",
+      "Classic",
+      "Quantum",
+      "Sunset",
+    ]);
+    const animations = GenerateAnimatins(
+      scene,
+      colorsMaterial,
+      cristalMaterial,
+      sodaMaterial,
+      brandMaterial,
+      textures
+    );
+    animations.forEach((animation) =>
+      timeline.to(
+        animation.target,
+        { ...animation.animationsProperties },
+        animation.pointTime
+      )
+    );
+  }, []);
 
-    timeline.to(
-      bottleGroup.rotation,
-      {
-        y: Math.PI * 2,
-      },
-      1
-    );
-    timeline.to(
-      bottleGroup.rotation,
-      {
-        y: -Math.PI * 2,
-      },
-      2
-    );
-    timeline.to(
-      bottleGroup.rotation,
-      {
-        y: Math.PI * 2,
-      },
-      3
-    );
+  useFrame(() => {
+    if (timeline) {
+      timeline.seek(timeline.duration() * scroll.offset);
+    }
   }, []);
 
   return (
