@@ -1,19 +1,19 @@
 # Proyecto 3D Scroll Control React Three Fiber
 
-<h3> Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola </h3>
+![Repo Cover]![Alt text](image-1.png))
 
-<p align="center" >
-  <img src="![Alt text](image.png)" >
-</p>
+<h3> Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola </h3>
 
 <h5>
   Proyecto creado por @lil dre 
 </h5>
 
-<code>
-  npm run dev
-</code>
+First, run the development server:
 
-<code>
-  npm run install
-</code>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
