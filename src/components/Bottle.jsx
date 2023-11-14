@@ -3,7 +3,8 @@ import { useGLTF } from "@react-three/drei";
 import { GenerateInitMaterials } from "./utils";
 
 export function Bottle(props) {
-  const { cristalMaterial, sodaMaterial } = GenerateInitMaterials();
+  const { cristalMaterial, sodaMaterial, brandMaterial } =
+    GenerateInitMaterials();
   const { nodes, materials } = useGLTF("/images/Bottle.glb");
 
   return (
@@ -21,13 +22,9 @@ export function Bottle(props) {
       <mesh
         name="Brand"
         geometry={nodes.Brand.geometry}
-        material={nodes.Brand.material}
+        material={brandMaterial}
       />
-      <mesh
-        name="Cap"
-        geometry={nodes.Cap.geometry}
-        material={nodes.Cap.material}
-      />
+      <mesh name="Cap" geometry={nodes.Cap.geometry} material={brandMaterial} />
     </group>
   );
 }
