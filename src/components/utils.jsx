@@ -314,9 +314,8 @@ export const LoadTextures = (imagePaths) => {
   const textures = {};
 
   imagePaths.forEach((img) => {
-    const path = `/images${img}.png`;
+    const path = `/${img}.png`;
     const texture = textureLoader.load(path);
-    console.log(path);
     texture.flipY = false;
     textures[img] = texture;
   });
