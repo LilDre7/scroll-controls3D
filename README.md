@@ -2,25 +2,13 @@
 
 ![GitHub Org's stars](/public/images//image.png)
 
-Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola
-
-- Proyecto creado por @lil dre
-
-First, run the development server:
 
 Repositorio: https://github.com/LilDre7/scroll-controls3D
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
 - npm create vite@latest
 
-- # Foobar
+- # Proyecto creado por @lil dre 🛠️
 
 Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola.
 
@@ -34,8 +22,8 @@ pip install foobar
 
 ## Usage
 
-```python
-import foobar
+```Astro
+npm create @vitelastest
 
 # returns 'words'
 foobar.pluralize('word')
@@ -49,8 +37,7 @@ foobar.singularize('phenomena')
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+Repositorio: https://github.com/LilDre7/scroll-controls3D
 
 Please make sure to update tests as appropriate.
 
