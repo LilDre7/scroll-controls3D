@@ -1,12 +1,6 @@
-# Proyecto 3D Scroll Control React Three Fiber
-
 ![GitHub Org's stars](/public/images//image.png)
 
-
-Repositorio: https://github.com/LilDre7/scroll-controls3D
-
-
-- npm create vite@latest
+# Proyecto 3D Scroll Control React Three Fiber
 
 - # Proyecto creado por @lil dre 🛠️
 
@@ -17,13 +11,13 @@ Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-pip install foobar
+npm run dev
 ```
 
 ## Usage
 
 ```Astro
-npm create @vitelastest
+npm create vite@latest
 
 # returns 'words'
 foobar.pluralize('word')
