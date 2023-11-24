@@ -2,7 +2,7 @@
 
 ![GitHub Org's stars](/public/images//image.png)
 
-Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola </h3>
+Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola
 
 - Proyecto creado por @lil dre
 
@@ -22,7 +22,7 @@ pnpm dev
 
 - # Foobar
 
-Foobar is a Python library for dealing with word pluralization.
+Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola.
 
 ## Installation
 
