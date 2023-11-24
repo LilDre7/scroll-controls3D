@@ -2,7 +2,7 @@
 
 # Proyecto 3D Scroll Control React Three Fiber
 
-- # Proyecto creado por @lil dre 🛠️
+- Proyecto creado por @lil dre 🛠️
 
 Elementos 3D junto con elementos del DOM, todo esto con un refrescante toquecito post-apocaliptico de Fallout y la Nuka-Cola.
 
