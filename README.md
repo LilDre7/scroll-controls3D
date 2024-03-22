@@ -1,6 +1,6 @@
 ![GitHub Org's stars](/public/images//image.png)
 
-# Proyecto 3D Scroll Control React Three Fiber
+# Proyecto 3D Scroll Control React Three Fiberdd
 
 - Proyecto creado por @lil dre 🛠️
 
