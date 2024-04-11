@@ -1,5 +1,5 @@
 ![GitHub Org's stars](/public/images//image.png)
-88990
+8899
 # Proyecto 3D Scroll Control React Three 
 
 - Proyecto creado por @lil dre 🛠️
